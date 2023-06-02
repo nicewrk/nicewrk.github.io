@@ -5,6 +5,10 @@ body {
   background-color: #070936;
 }
 
+#header {
+  margin-top: 40%;
+}
+
 #header_image {
   position: relative;
   width: 100%;
@@ -28,7 +32,6 @@ body {
 }
 
 #name {
-  margin-top: 40%;
   font-size: 5em;
 }
 
