@@ -11,6 +11,10 @@ body {
   text-align: center;
 }
 
+#container-fluid {
+  background-color: #070936;
+}
+
 #name, #tagline {
   position:absolute;
   right:15%;
