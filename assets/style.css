@@ -1,8 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 body {
+  margin: 0;
+  padding: 0;
+  background-color: #272727;
+  min-height: 100vh;
   font-family: 'Open Sans', sans-serif;
-  background-color: #070936;
 }
 
 #header {
@@ -35,6 +38,22 @@ body {
   margin: auto;
   padding: 10px;
   width: 400px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.centered-logo {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
 }
 
 
