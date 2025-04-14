@@ -6,6 +6,8 @@ body {
   background-color: #272727;
   min-height: 100vh;
   font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  padding-top: 70px;
 }
 
 #header {
@@ -44,16 +46,121 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 40vh;
+  margin-bottom: 20px;
 }
 
 .centered-logo {
-  max-width: 400px;
+  max-width: 300px;
   width: 100%;
   height: auto;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
   -ms-interpolation-mode: nearest-neighbor;
+}
+
+/* New styles for the updated website */
+.navbar-inverse {
+  background-color: #171717;
+  border-color: #080808;
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #9d9d9d;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: #070936;
+}
+
+.jumbotron {
+  background-color: #272727;
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  margin-top: 0;
+}
+
+.jumbotron p {
+  color: #9d9d9d;
+}
+
+.container {
+  padding-top: 20px;
+}
+
+.btn-primary {
+  background-color: #070936;
+  border-color: #070936;
+}
+
+.btn-primary:hover {
+  background-color: #0a0e5c;
+  border-color: #0a0e5c;
+}
+
+.btn-default {
+  background-color: transparent;
+  border-color: #9d9d9d;
+  color: #9d9d9d;
+}
+
+.btn-default:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+  color: #fff;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  border-top: 1px solid #444;
+  color: #9d9d9d;
+  text-align: center;
+}
+
+/* Page-specific styles */
+.page-header {
+  border-bottom-color: #444;
+}
+
+.service-item {
+  margin-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.team-member {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  margin-bottom: 40px;
+}
+
+.contact-form .form-control {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: #444;
+  color: #fff;
+}
+
+.contact-form .form-control:focus {
+  border-color: #070936;
+  box-shadow: 0 0 8px rgba(7, 9, 54, 0.6);
 }
 
 
