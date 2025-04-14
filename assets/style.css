@@ -1,13 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-body {
+/* Reset for top positioning */
+html, body {
   margin: 0;
   padding: 0;
+}
+
+body {
   background-color: #272727;
   min-height: 100vh;
   font-family: 'Open Sans', sans-serif;
   color: #fff;
-  padding-top: 70px;
+  padding-top: 0 !important;
 }
 
 #header {
@@ -59,10 +63,36 @@ body {
   -ms-interpolation-mode: nearest-neighbor;
 }
 
-/* New styles for the updated website */
+/* Clean navbar styling */
+.navbar {
+  min-height: 50px;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
 .navbar-inverse {
   background-color: #171717;
-  border-color: #080808;
+}
+
+.navbar-fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  border-width: 0;
+}
+
+.navbar-brand {
+  padding: 10px 15px;
+  height: 50px;
+}
+
+.navbar-brand img {
+  display: inline-block;
+  height: 30px;
+  width: auto;
 }
 
 .navbar-inverse .navbar-brand,
@@ -81,6 +111,11 @@ body {
   background-color: #070936;
 }
 
+/* Content spacing */
+.container {
+  padding-top: 50px;
+}
+
 .jumbotron {
   background-color: #272727;
   text-align: center;
@@ -95,10 +130,6 @@ body {
 
 .jumbotron p {
   color: #9d9d9d;
-}
-
-.container {
-  padding-top: 20px;
 }
 
 .btn-primary {
@@ -161,6 +192,123 @@ footer {
 .contact-form .form-control:focus {
   border-color: #070936;
   box-shadow: 0 0 8px rgba(7, 9, 54, 0.6);
+}
+
+/* Override Bootstrap well class to match dark theme */
+.well {
+  background-color: rgba(7, 9, 54, 0.3);
+  border-color: #444;
+  color: #fff;
+}
+
+.well a {
+  color: #9d9d9d;
+  text-decoration: underline;
+}
+
+.well a:hover {
+  color: #fff;
+}
+
+/* Override Bootstrap panel styling to match dark theme */
+.panel-default {
+  background-color: transparent !important;
+  border-color: #444 !important;
+}
+
+.panel-default > .panel-heading {
+  background-color: rgba(7, 9, 54, 0.3) !important;
+  border-color: #444 !important;
+  color: #fff !important;
+}
+
+.panel-default > .panel-body {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  color: #fff !important;
+}
+
+/* Form control placeholder styling */
+.form-control {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border-color: #444;
+}
+
+.form-control:focus {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Fix placeholder styling */
+::placeholder,
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder {
+  color: #9d9d9d !important;
+  font-size: 14px !important;
+  opacity: 0.7 !important;
+}
+
+/* Custom input styling for contact form */
+.custom-input {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  color: #fff !important;
+  border-color: #444 !important;
+  font-size: 14px !important;
+  font-weight: normal !important;
+}
+
+.custom-input::placeholder {
+  color: rgba(157, 157, 157, 0.5) !important;
+  font-size: 14px !important;
+  font-weight: normal !important;
+  opacity: 0.7 !important;
+  font-style: italic;
+}
+
+.custom-input:focus {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  border-color: rgba(7, 9, 54, 0.6) !important;
+  box-shadow: 0 0 8px rgba(7, 9, 54, 0.4) !important;
+}
+
+/* Form controls override */
+input[type="text"], 
+input[type="email"], 
+input[type="password"],
+textarea {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  color: #fff !important;
+  border-color: #444 !important;
+  font-size: 14px !important;
+  font-weight: normal !important;
+}
+
+input[type="text"]::placeholder, 
+input[type="email"]::placeholder, 
+input[type="password"]::placeholder,
+textarea::placeholder {
+  color: rgba(157, 157, 157, 0.5) !important;
+  font-size: 14px !important;
+  font-weight: normal !important;
+  opacity: 0.7 !important;
+  font-style: italic;
+}
+
+/* Extra fixes for potential margin issues */
+body::before {
+  display: none;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* Directly target Bootstrap containers */
+.navbar > .container, 
+.navbar > .container-fluid {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 
